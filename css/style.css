@@ -83,12 +83,36 @@ input {
 
 @media (max-width: 720px) {
   .container {
-    width: 90%;
+    width: 85%;
+  }
+  input {
+    width: 85%;
+  }
+  button {
+    width: 85%;
+  }
+  .list-container {
+    width: 85%;
+  }
+  .item-container {
+    width: 85%;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    width: 90%;
+    width: 85%;
+  }
+  input {
+    width: 85%;
+  }
+  button {
+    width: 85%;
+  }
+  .list-container {
+    width: 85%;
+  }
+  .item-container {
+    width: 85%;
   }
 }
