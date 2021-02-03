@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 50vw;
   height: 140vh;
   background: #00bacd;
@@ -22,17 +22,16 @@ body {
 /** TITULO **/
 
 h2 {
-  font-size: 35px;
+  font-size: 2em;
   font-weight: bold;
   color: #023d44;
   cursor: default;
-  text-align: left;
 }
 /** INPUT **/
 
 input {
   position: relative;
-  width: 47vw;
+  width: 40vw;
   height: 9vh;
   margin: 20px auto;
   background: #fff;
@@ -43,7 +42,7 @@ input {
 
 #username {
   padding: 0;
-  font-size: 1.7em;
+  font-size: 1.4em;
   color: #757575;
   text-indent: 20px;
 }
@@ -52,7 +51,7 @@ input {
 
 .addButton {
   position: relative;
-  width: 47vw;
+  width: 40vw;
   height: 9vh;
   margin-bottom: 20px;
   padding: 10px auto;
@@ -72,7 +71,7 @@ input {
 
 #addButton {
   padding: 0;
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #006c77;
 }
@@ -81,7 +80,7 @@ input {
 .list-container {
   margin: 0px;
   padding: 0px;
-  width: 47vw;
+  width: 40vw;
   height: 90vh;
   background: #fff;
   border-radius: 5px;
@@ -95,7 +94,6 @@ input {
   height: 89vh;
   text-indent: 0px;
   list-style: none;
-  background: greenyellow;
 }
 
 #list {
@@ -108,97 +106,201 @@ input {
 /* Para 1200px */
 @media only screen and (max-width: 1200px) and (min-width: 961px) {
   .container {
-    display: flex;
-    align-items: center;
-    margin: 50px 100px;
-    width: 70%;
+    width: 80vh;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  input {
+    width: 70vh;
+    border-radius: 5px;
+  }
+
+  .addButton {
+    width: max-content;
+    width: 70vh;
+    border-radius: 5px;
+  }
+
+  .list-container {
+    width: 70vh;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .item-container {
+    width: 100%;
   }
 }
 
 /* Para 960px */
 @media only screen and (max-width: 960px) and (min-width: 821px) {
   .container {
-    display: flex;
-    align-items: center;
-    margin: 50px 100px;
-    width: 70%;
+    width: 80vh;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  input {
+    width: 70vh;
+    border-radius: 5px;
+  }
+
+  .addButton {
+    width: max-content;
+    width: 70vh;
+    border-radius: 5px;
+  }
+
+  .list-container {
+    width: 70vh;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .item-container {
+    width: 100%;
   }
 }
 
 /* Para 800px */
 @media only screen and (max-width: 820px) and (min-width: 621px) {
   .container {
-    margin: 40px 75px;
-    width: 70%;
+    width: 90vh;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  input {
+    width: 70vh;
+    border-radius: 5px;
+  }
+
+  .addButton {
+    width: max-content;
+    width: 70vh;
+    border-radius: 5px;
+  }
+
+  .list-container {
+    width: 70vh;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .item-container {
+    width: 100%;
   }
 }
 
 /* Para 600px */
 @media only screen and (max-width: 620px) and (min-width: 501px) {
   .container {
-    width: 100%;
+    width: 80vh;
   }
+
+  h2 {
+    font-size: 2em;
+  }
+
   input {
-    width: 250px;
+    width: 70vh;
+    border-radius: 5px;
   }
+
   .addButton {
     width: max-content;
+    width: 70vh;
+    border-radius: 5px;
   }
 
   .list-container {
-    border-radius: 5px;
-    width: 100%;
+    width: 70vh;
     margin: 0;
+    border-radius: 5px;
   }
 
   .item-container {
     width: 100%;
-    margin: 0;
   }
 }
 /* Para 480px */
 @media only screen and (max-width: 500px) and (min-width: 341px) {
   .container {
     width: 100%;
+    height: auto;
+    margin: 0;
   }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.7em;
+  }
+
   input {
-    width: 250px;
+    width: 40vh;
+    border-radius: 5px;
   }
+
+  button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
   .addButton {
-    width: max-content;
+    width: 40vh;
+    margin-bottom: 20px;
   }
 
   .list-container {
-    border-radius: 5px;
     width: 100%;
-    margin: 0;
+    border-radius: 0;
   }
 
   .item-container {
     width: 100%;
-    margin: 0;
+    border-radius: 0;
   }
 }
 /* Para 320px */
 @media only screen and (max-width: 340px) and (min-width: 5px) {
   .container {
     width: 100%;
+    height: auto;
+    margin: 0;
   }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.7em;
+  }
+
   input {
-    width: 250px;
+    width: 40vh;
+    border-radius: 5px;
   }
-  .addButton {
+
+  button {
     width: 100%;
+    border-radius: 5px;
+  }
+
+  .addButton {
+    width: 40vh;
+    margin-bottom: 20px;
   }
 
   .list-container {
     width: 100%;
-    margin: 0;
-    border-radius: 5px;
+    border-radius: 0;
   }
 
   .item-container {
     width: 100%;
-    margin: 0;
+    border-radius: 0;
   }
 }
