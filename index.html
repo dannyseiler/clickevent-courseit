@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>ToDo List</title>
   </head>
   <body>
     <main class="container">
+      <div class="title-container"><h2>ToDo List</h2></div>
       <form class="form-container">
         <input
           type="text"
-          placeholder="Nuevo Usuario"
+          placeholder="Nueva tarea..."
           id="username"
           onkeypress="pressEnter(event)"
           class="input-container"
         />
       </form>
       <div class="button-container">
-        <button onclick="addItem()" type="submit" id="button" class="button">
-          Agregar usuario
+        <button
+          onclick="addItem()"
+          type="submit"
+          id="addButton"
+          class="addButton"
+        >
+          Agregar tarea
         </button>
       </div>
       <div class="list-container">
-        <ul id="list" class="item-container"></ul>
+        <ol id="list" class="item-container"></ol>
       </div>
     </main>
     <script src="./js/app.js"></script>
